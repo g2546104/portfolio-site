@@ -18,8 +18,8 @@
             <section id="top">
             <img src="./メディア/私.jpg" width="40%">
             <h1>
-                Seiya Watanabe<br>
-                Portfolio
+                渡邉 晴也<br>
+                ポートフォリオ
             </h1>
             </section>
             <section id="about">
@@ -46,35 +46,67 @@
                 </select>
             </div>
             <div id="works-grid"></div>
-        </section>
-            <ul>
-                <li> ゲーム
-                    <img src="./メディア/ゲーム.jpg" alt="ゲーム">
-                </li>
-                
-                <li>アニメ
-                    <img src="./メディア/アニメ.jpg" alt="アニメ">
-                </li>
-                <li>動画編集
-                    <img src="./メディア/動画編集.jpg" alt="動画編集">
-                </li>
-                <li>運動
-                    <img src="./メディア/運動.jpg" alt="運動">
-                </li>
-                <li>散歩
-                    <img src="./メディア/散歩.jpg" alt="散歩">
-                </li>
-                <li>音楽
-                    <img src="./メディア/音楽.jpg" alt="音楽">
-                </li>
-                <li>推し活
-                    <img src="./メディア/推し活.jpg" alt="推し活">
-                </li>
-            </ul>
+        
+    <ul class="works-grid">
+        <li>
+            <img src="./メディア/ゲーム.jpg" alt="ゲーム">
+            <p>ゲーム</p>
+        </li>
+        <li>
+            <img src="./メディア/アニメ.jpg" alt="アニメ">
+            <p>アニメ</p>
+        </li>
+        <li>
+            <img src="./メディア/動画編集.jpg" alt="動画編集">
+            <p>動画制作</p>
+        </li>
+        <li>
+            <img src="./メディア/運動.jpg" alt="運動">
+            <p>運動</p>
+        </li>
+        <li>
+            <img src="./メディア/音楽.jpg" alt="音楽">
+            <p>音楽</p>
+        </li>
+        <li>
+            <img src="./メディア/推し活.jpg" alt="推し活">
+            <p>推し活</p>
+        </li>
+    </ul>
+</section>
         </main>
-        <footer>
-            <span>© 2026 Seiya Watanabe</span>
-        </footer>
+<footer>
+    <h1>
+        メールアドレス
+    </h1>
+    <a href="mailto:g2546104@tcu.ac.jp">
+        g2546104@tcu.ac.jp
+    </a>
+</footer>
         <script src="works.js"></script>
+
+<!-- ゲームを開くボタン -->
+<button id="game-toggle" type="button">
+    🎮 ゲームで遊ぶ？
+</button>
+
+<!-- ゲーム画面 -->
+<div id="game-panel" hidden>
+    <div class="game-header">
+        <h2>クリックゲーム</h2>
+        <button id="game-close" type="button" aria-label="閉じる">×</button>
+    </div>
+
+    <p>スコア：<span id="game-score">0</span></p>
+
+    <button id="click-button" type="button">
+        クリック！
+    </button>
+
+    <p class="game-message">クリックしてスコアを増やそう！</p>
+    <button id="game-reset" type="button">リセット</button>
+</div>
+
+<script src="game.js"></script>
     </body>
 </html>

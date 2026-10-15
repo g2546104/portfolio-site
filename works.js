@@ -134,5 +134,36 @@ fetch("works.csv")
             displayWorksWorks();
         }) ;
         }
+        
+const toggle = document.getElementById("game-toggle");
+const panel = document.getElementById("game-panel");
+const close = document.getElementById("game-close");
+const clickButton = document.getElementById("click-button");
+const scoreDisplay = document.getElementById("game-score");
+const resetButton = document.getElementById("game-reset");
+
+let score = 0;
+
+// ゲーム画面を開く・閉じる
+toggle.addEventListener("click", () => {
+    panel.hidden = !panel.hidden;
+});
+
+close.addEventListener("click", () => {
+    panel.hidden = true;
+});
+
+// クリックするたびにスコアを増やす
+clickButton.addEventListener("click", () => {
+    score++;
+    scoreDisplay.textContent = score;
+});
+
+// スコアをリセット
+resetButton.addEventListener("click", () => {
+    score = 0;
+    scoreDisplay.textContent = score;
+});
+
         });
     })
