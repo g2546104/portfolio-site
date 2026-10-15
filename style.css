@@ -1,6 +1,6 @@
 body{
-    background: #ffffff;
-    color: #d9534f;
+    background: #f47b7b;
+    color: #040404;
 }
 
 a{
@@ -13,14 +13,15 @@ header {
     align-items: center;
     width: 100%;
     position: fixed;
-    padding: 0px 30px;
-    background: #ffffff;
-    height: 75px;
+    padding: 0px 3%;
+    background: #f7f7f7;
+    height: 60px;
     top: 0;
+    left: 0;
 }
 nav{
     display: flex;
-    gap: 28px;
+    gap: 30px;
 }
 * {box-sizing: border-box; }
 section{
@@ -104,5 +105,58 @@ nav a:hover {
 
     .work-controls {
         flex-direction: column;
+    }
+}
+
+ ul img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* 趣味の画像一覧 */
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px 30px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    align-items: start;
+}
+
+/* 画像と文字をまとめる要素 */
+.works-grid li {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+}
+
+/* 画像 */
+.works-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* 趣味の名前 */
+.works-grid p {
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+
+/* スマートフォンでは2列 */
+@media screen and (max-width: 600px) {
+    .works-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px 15px;
+    }
+
+    .works-grid img {
+        height: 150px;
     }
 }
