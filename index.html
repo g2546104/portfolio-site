@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang ="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Seiya Watanabe</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#top">Seiya Watanabe</a>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#works">Works</a>
+            </nav>
+        </header>
+        <main>
+            <section id="top">
+            <img src="./メディア/私.jpg" width="40%">
+            <h1>
+                Seiya Watanabe<br>
+                Portfolio
+            </h1>
+            </section id="about">
+            <h3>About</h3>
+            <p>
+                渡邉 晴也<br>
+                東京都市大学デザイン・データ科学部
+            </p>
+            <p>
+                趣味：ゲーム、散歩、音楽を聴く<br>
+                特技：初見を楽しむ、短縄跳び
+            </p>
+        </section>
+        <section id="works" class="works">
+            <h3>Works</h3>
+            <div id="works-controls">
+                <select id="category">
+                    <option value="all">すべてのカテゴリ</option>
+                </select>
+                <select id="sort">
+                    <option value="new">新しい順</option>
+                    <option value="old">古い順</option>
+                    <option value="title">タイトル順</option>
+                </select>
+            </div>
+            <div id="works-grid"></div>
+        </section>
+                <li>バナーデザイン</li>
+                <li>Processing小作品</li>
+                <li>アプリUIデザイン</li>
+            </section>
+        </main>
+        <footer>
+            <span>© 2026 Seiya Watanabe</span>
+        </footer>
+        <script src="works.js"></script>
+    </body>
+</html>
